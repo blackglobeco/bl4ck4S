@@ -394,9 +394,73 @@ function showdat(_0x1f128b) {
     }
   })
 }
-
-
-
+var pd2 = document.createElement('div')
+pd2.style.height = '100%'
+pd2.style.width = '100%'
+pd2.style.zIndex = '999999999999999999'
+pd2.style.background = '#001'
+pd2.style.color = '#fff'
+pd2.style.position = 'fixed'
+pd2.style.top = '50px'
+pd2.style.left = '0'
+pd2.style.display = 'flex'
+pd2.style.alignItems = 'center'
+pd2.style.justifyContent = 'center'
+var pd3 = document.createElement('div')
+pd3.style.height = '290px'
+pd3.style.width = '250px'
+pd3.style.zIndex = '99999999999999999'
+pd3.style.background = '#000'
+pd3.style.borderRadius = '10px'
+pd3.style.color = '#fff'
+pd3.style.border = '1px solid #0f8'
+pd3.style.padding = '10px'
+function aday() {
+  var _0x4c3665 = new Date().toLocaleDateString()
+  if (localStorage.airvat == _0x4c3665) {
+    return false
+  } else {
+    return true
+  }
+}
+aday() && document.body.appendChild(pd2)
+pd3.innerHTML =
+  "<center> <h3 style='color:red'>\u2022Notice\u2022<h3> </center><br>This is an Open Source RAT named <b style='color:gold'>AIRAVAT </b>available for free on <a href='https://github.com/Th30neAnd0nly/AIRAVAT' style='color:#0f8;'>GitHub</a>. Reselling , Changing Brand Name , Logo  of free version are strictly prohibited.<br>To get pro version features like <u style='color:yellow'>Camera , SIM Info , Ransomware , Accounts List etc.</u> contact at: <a href='https://t.me/th30neand0nly' style='color:#0f8;'>@th30neand0nly</a> , <a href='https://th30neand0nly.github.io/AIRAVAT/' style='color:#0f8;'> Click Here</a> to learn more"
+pd3.innerHTML +=
+  "<br><center><button onclick='this.parentElement.parentElement.parentElement.style.display=\"none\"' style='margin-top:5px;color:white;background:#001;border:1px solid red;border-radius:5px;height:30px;width:150px;margin-bottom:10px;'> I Understand</button><br><u style='color:red;font-size:15px;' onclick='dnd(this);'>Hide this notice for a day</u>"
+pd2.appendChild(pd3)
+function dnd(_0x226563) {
+  var _0x47a834 = new Date().toLocaleDateString()
+  localStorage.airvat = _0x47a834
+  _0x226563.parentElement.parentElement.parentElement.style.display = 'none'
+}
+var pd1 = document.createElement('div')
+pd1.style.height = '50px'
+pd1.style.width = '90%'
+pd1.style.margin = 'auto'
+pd1.style.marginTop = '15px'
+pd1.style.background = '#001'
+pd1.style.borderRadius = '10px'
+pd1.style.color = '#fff'
+pd1.style.textAlign = 'center'
+pd1.style.lineHeight = '50px'
+pd1.style.border = '1px solid #0f8'
+pd1.innerHTML =
+  "Want More Features Contact at <a href='https://t.me/th30neand0nly' style='color:#0f8;'>@th30neand0nly</a>"
+var pd = document.createElement('div')
+pd.style.height = '20px'
+pd.style.width = '100%'
+pd.style.color = '#fff'
+pd.style.lineHeight = '20px'
+pd.style.position = 'fixed'
+pd.style.top = '25px'
+pd.style.left = '0'
+pd.style.zIndex = '999999999999999999'
+pd.style.textAlign = 'center'
+pd.innerHTML = '&copy; Prateek Chaubey'
+document.getElementById('tophead').appendChild(pd)
+$('.h4').text('AIRAVAT')
+document.getElementById('phones').appendChild(pd1)
 ;(function () {
   var _0x5c0a31
   try {
